@@ -1,0 +1,32 @@
+<LoginScreen>:
+    FloatLayout:
+        TextInput:
+            id: user_email
+            size_hint: .3, .1
+            pos_hint: {'center_x': .55,'center_y': .5}
+
+        TextInput:
+            password: True
+            size_hint: .3, .1
+            pos_hint: {'center_x': .55, 'center_y': .4}
+            id: user_password
+            text: 'youpassword'
+
+        Label:
+            text: 'Email:'
+            pos_hint: {'center_x': .3, 'center_y': .5}
+
+        Label:
+            text: 'Password:'
+            pos_hint: {'center_x': .3, 'center_y': .4}
+
+        Button:
+            text: 'Login'
+            pos_hint: {'center_x': .43, 'center_y': .3}
+            size_hint: .2, .05
+            on_press: root.login()
+
+        Button:
+            text: 'Create Account'
+            pos_hint: {'center_x': .63, 'center_y': .3}
+            size_hint: .2, .05
